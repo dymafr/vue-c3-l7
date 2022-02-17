@@ -3,6 +3,7 @@
   <form @submit.prevent="formSubmit">
     <button>Envoyer</button>
   </form>
+  <input type="text" @keyup.enter="handleEnter()" />
 </template>
 
 <script setup lang="ts">
@@ -11,6 +12,9 @@ function userClick(event: MouseEvent) {
 }
 function formSubmit() {
   console.log('Envoyé');
+}
+function handleEnter() {
+  console.log('Entrée');
 }
 </script>
 
