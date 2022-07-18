@@ -1,5 +1,5 @@
 <template>
-  <h1 @click.left="userClick">Bonjour tout le monde !</h1>
+  <h1 @click.left.once="userClick">Bonjour tout le monde !</h1>
 
   <form @submit.prevent="formSubmit">
     <button>Envoyer</button>
